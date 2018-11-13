@@ -18,10 +18,6 @@ export default class HomeView extends Component<Props>{
 
     render(){
         const artists = this.state.artists
-
-        if(artists)
-            console.warn(artists[0].name)
-
         return(
             <View style = {styles.container}>
                 {artists && <ArtistList artists={artists} />}
