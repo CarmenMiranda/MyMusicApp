@@ -3,7 +3,6 @@ import {
     StyleSheet,
     View,
 } from 'react-native';
-import ucol from './assets/ucol.png';
 
 import ArtistList from './ArtistList'
 import {getMusicData} from './api-client'
