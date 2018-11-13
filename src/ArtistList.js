@@ -33,7 +33,7 @@ export default class ArtistList extends Component<Props> {
         });
     }
 
-    handlePress(artists){
+    handlePress(artist){
         Actions.artistDetail({ artist: artist});
     }
 
