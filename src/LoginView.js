@@ -63,6 +63,8 @@ export default class LoginView extends Component{
                     placeholderTextColor={'#000035'}
                     onSubmitEditing={()=>{this.passwordTextInput.focus();}}
                     returnKeyType={'next'}
+                    autoCapitalize={'none'}
+                    keyboardType={'email-address'}
                 />
                 <TextInput
                     style={styles.textInput}
@@ -74,6 +76,7 @@ export default class LoginView extends Component{
                     ref={(input)=>{this.passwordTextInput = input;}}
                     returnKeyType={'done'}
                     onSubmitEditing={this.ingresar}
+                    autoCapitalize={'none'}
                 />
                 <TouchableOpacity onPress={this.ingresar} style={styles.boton}>
                     <Text style={styles.textoBoton}>
